@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+   <class name = "com.project.Contact" table = "Contact">
+        <meta attribute = "class-description">
+            This class contains the Contact detail. 
+        </meta>
+        <id name = "contactId" type = "long" column = "id">
+            <generator class="identity"/>
+        </id>
+        <property name = "name" column = "name" type = "string"/>
+        <property name = "email" column = "email" type = "string"/>
+        <set name="employees" table="Employee_Contact" cascade="save-update">
+            <key column="contacts_id"/>
+            <many-to-many column="employees_id" class="com.project.Employee" />
+        </set>
+   </class>
+</hibernate-mapping>
