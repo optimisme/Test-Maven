@@ -1,4 +1,4 @@
-# Exemple Canvas Hibernate tipus XML Many To Many #
+# Exemple Hibernate tipus XML Many To Many #
 
 En aquest projecte hi ha un exemple de Hibernate tipus XML Many To Many
 
