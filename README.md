@@ -10,3 +10,9 @@ mvn clean
 mvn compile
 mvn exec:java -Dexec.mainClass="com.project.Main" -q
 ```
+
+
+(Per explicar millor)
+Per executar el projecte cal
+.\run.ps1 com.project.Main
+./run.sh com.project.Main

@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class MainSQLite {
 
     public static void main(String[] args) throws SQLException {
-        String basePath = System.getProperty("user.dir") + "/";
+        String basePath = System.getProperty("user.dir") + "/data/";
         String filePath = basePath + "database.db";
         ResultSet rs = null;
 
